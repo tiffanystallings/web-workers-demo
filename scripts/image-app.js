@@ -48,8 +48,6 @@
 
     worker.onmessage = function(e) {
       imageData = e.data;
-      console.log('imageData received');
-      console.log(imageData);
       ctx.putImageData(imageData, 0, 0);
     };
     toggleButtonsAbledness();
